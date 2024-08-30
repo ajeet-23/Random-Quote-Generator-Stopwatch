@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Random.css">
+    <!--Global Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Roboto&display=swap" rel="stylesheet">
+<!--Font Awesome Links-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--<style>
+    /*General Styles*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(https://i.pinimg.com/originals/ed/da/27/edda276266484f423c9505c4318cfba1.jpg) no-repeat center center/ cover; 
+}
+
+.container{
+    width: 550px;
+    height: 450px;
+}
+
+.header{
+    font-size: 1.2rem;
+    border: solid 2px #fff;
+    color: #fff;
+    background-color: #262626;
+    padding: 7px;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.main-content{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(100, 255, 100, 1);
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px;
+}
+
+.main-content .text-area{
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.main-content .person{
+    font-size: 1.6rem;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.button-area button {
+      background-color: #262626;
+      color: #fff;
+      font-size: 1.3rem;
+      padding: 10px 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+}
+
+.button-area button:active{
+    background-color: lightblue;
+}
+
+</style>-->
+    <title>DOM Manipulation P2</title>
+   
+</head>
+<body>
+     <!--Project 1: Quote Generator-->
+
+     <div class="container">
+        <div class="header">
+             <h2>JavaScript Quote Generator</h2>
+    
+        </div>
+
+        <div class="main-content">
+            <div class="text-area">
+                <span class="quote">
+                    "I do the very best I know how - the very best I can; and I mean to keep on doing so until the end."
+                </span>
+            </div>
+            <div class="person">-Ajju6323</div>
+
+            <div class="button-area">
+                <button id="new-quote">New  Quote</button>
+            </div>
+        </div>
+     </div>
+
+     <!--SCRIPTS-->
+     <script src="RandomQuote.js"></script>
+    <!-- <script>
+        //Variables
+
+let btn=document.querySelector('#new-quote');
+let quote=document.querySelector('.quote');
+let person=document.querySelector('.person');
+
+const quotes=[{
+    quote:`"The best way to find yourself is to lose yourself in the service of others."`,
+    person: ` Ajeet Meena`
+}, {
+    quote: `"If you want to live a happy life, tie it to a goal, not to people or things."`,
+    person: `Sonu Meena`
+}, {
+    quote: `"At his best, man is the noblest of all animals; separated from law and justice he is the worst."`,
+    person: `Pranjal Yadav`
+}, {
+    quote: `"Your time is limited, so dont waste it living someone else's life."`,
+    person: `Mansi Meena`
+}, {
+    quote: `"Tell me and I forget. Teach me and I remember. Involve me and I learn."`,
+    person: `Babita Rani`
+}, {
+    quote: `"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough."`,
+    person: `Asha Bhabhi`
+}, {
+    quote: `"It does not matter how slowly you go as you do not stop."`,
+    person: `Mahi-Bhumi`
+}, {
+    quote: `"Our lives begin to end the day we become silent about things that matter."`,
+    person: `Martin Luther King, Jr.`
+}, {
+    quote: `"Remember that not getting what you want is sometimes a wonderful stroke of luck."`,
+    person: `Meena Family`
+}, {
+    quote: `"The journey of a thousand miles begins with one stop."`,
+    person: `Ajeet`
+},];
+
+btn.addEventListener('click', function(){
+    let random=Math.floor(Math.random() * quotes.length);
+
+    quote.innerText=quotes[random].quote;
+    person.innerText=quotes[random].person;
+})
+     </script>-->
+</body>
+</html>
